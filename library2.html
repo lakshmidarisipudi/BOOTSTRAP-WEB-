@@ -1,0 +1,401 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>ONLINE LIBRARY</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.callout {
+  position: fixed;
+  bottom: 35px;
+  right: 20px;
+  margin-left: 20px;
+  max-width: 300px;
+}
+
+.callout-header {
+  padding: 25px 15px;
+  background: #555;
+  font-size: 30px;
+  color: white;
+}
+
+.callout-container {
+  padding: 15px;
+  background-color: #ccc;
+  color: black
+}
+
+.closebtn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.closebtn:hover {
+  color: lightgrey;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.checked {
+  color: orange;
+
+footer {
+      background-color: #555;
+      color: white;
+      padding: 10px;
+    }
+</style>
+</head>
+<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+     
+      <a class="navbar-brand" href="library2.html">Online Library</a>
+</div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+              <li><a href="library2.html"><h4>Home</h4></a></li>
+              <li><a href="books.html"><h4>Books</h4></a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><h4>Register<span class="caret"></h4></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#Students"><h5>Students</h5></a></li>
+          <li><a href="#Others"><h5>Others</h5></a></li>
+          </ul>
+          </li>
+          <li><a href="#About"><h4>About</h4></a></li>
+          <li><a href="#Contact"><h4>Contact</h4></a></li>
+          
+           </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+<br>
+<br>
+<div id="Home" class="container-fluid">
+<h2><u><font color="black">Home</u></h2>
+<div class="container-fluid">
+  <div class="row">
+   <div class="col-md-4"><img src="logo1.jpg" width="25%"></div>
+   <div class="col-md-4">
+     <div class="centered"><p><h1><b>ONLINE LIBRARY</b></h1></p></div>
+   </div>
+   <div class="col-md-4"><form class="form-inline" action="/action_page.php">
+    <div class="form-group">
+      <label for="User name">Username:</label>
+      <input type="text" class="form-control" id="User name" placeholder="Enter Name" name="User name">
+    </div>
+    <br>
+    <br>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+    </div>
+    <br>
+    <br>
+    <button type="submit" class="btn btn-default">Login</button>
+  </form></div>
+  </div>
+ </div>
+
+<div class="container-fluid">
+<p><b>Advertisements</b></p>  
+<div class="row">
+    <div class="col-sm-4">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="add1.jpg" style=width:"100%;" height:"100%;">
+      </div>
+
+      <div class="item">
+        <img src="add2.jpg" style=width:"100%;" height:"100%;">
+      </div>
+    
+      <div class="item">
+        <img src="add3.jpg" style=width:"100%;" height:"100%;">
+      </div>
+
+     <div class="item">
+        <img src="add4.jpg" style=width:"100%;" height:"100%;">
+      </div>
+
+    <div class="item">
+        <img src="add7.jpg" style=width:"100%;" height:"100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+    <div class="col-sm-8"><p><h3><font color="#93csf1">About Books:</font></h3></p>
+<p><h5>As a physical object, a book is a stack of usually rectangular pages 
+(made of papyrus, parchment, vellum, or paper) oriented with one edge tied, sewn, or otherwise fixed
+ together and then bound to the flexible spine of a protective cover of heavier, relatively inflexible 
+material.[1] The technical term for this physical arrangement is codex (in the plural, codices). In the 
+history of hand-held physical supports for extended written compositions or records, the codex 
+replaces its immediate predecessor, the scroll. A single sheet in a codex is a leaf, and each side of a leaf
+ is a page.As an intellectual object, a book is prototypically a composition of such great length that it 
+takes a considerable investment of time to compose and a still considerable, though not so extensive,
+ investment of time to read. This sense of book has a restricted and an unrestricted sense. In the 
+restricted sense, a book is a self-sufficient section or part of a longer composition, a usage that reflects
+ the fact that, in antiquity, long works had to be written on several scrolls, and each scroll had to be 
+identified by the book it contained. So, for instance, each part of Aristotle's Physics is called a book, 
+as of course, the Bible encompasses many different books. In the unrestricted sense, a book is the
+ compositional whole of which such sections, whether called books or chapters or parts, are parts
+.</font></h5></p>
+
+<p><h3><font color="93csf1">About Library:</font></h3></p>
+<p><h5>A library is a curated collection of sources of information and similar resources, selected by experts and made accessible to a defined community for reference or borrowing. It provides physical or digital access to material, and may be a physical location or a virtual space, or both. A library's collection can include books, periodicals, newspapers, manuscripts, films, maps, prints, documents, microform, CDs, cassettes, videotapes, DVDs, Blu-ray Discs, e-books, audiobooks, databases, and other formats. Libraries range widely in size up to millions of items. In Latin and Greek, the idea of a bookcase is represented by Bibliotheca and Bibliothēkē (Greek: βιβλιοθήκη): derivatives of these mean library in many modern languages, e.g. French bibliothèque.
+
+The first libraries consisted of archives of the earliest form of writing—the clay tablets in cuneiform script discovered in Sumer, some dating back to 2600 BC. Private or personal libraries made up of written books appeared in classical Greece in the 5th century BC. In the 6th century, at the very close of the Classical period, the great libraries of the Mediterranean world remained those of Constantinople and Alexandria.
+</font></h5></p>
+</div>
+</div>
+<br>
+<br>
+
+
+<div id="Students" class="container-fluid">
+<u><h2>Student Registration Form</h2></u>
+    <div class="form-group">
+      <label for="name">Username:</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter name" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+    </div>
+    <div class="form-group">
+      <label for="dob">DOB:</label>
+      <input type="date" class="form-control" id="dob" placeholder="Enter date of birth" name="dob">
+    </div>
+    <div class="form-group">
+      <label for="mobile no">Mobile No:</label>
+      <input type="text" class="form-control" id="mobileno" placeholder="Enter mobile number" name="mobile no">
+    </div>
+   <div class="form-group">
+      <label for="clgname">Collegename:</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter college name" name="email">
+    </div>
+    <div class="form-group">
+      <label for="rollno">Roll No:</label>
+      <input type="text" class="form-control" id="no" placeholder="Enter college number" name="email">
+    </div>
+   <div class="container">
+  <p>Known Languages:</p>
+  <form>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">English
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Telugu
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Hindi
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Kannada
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Tamil
+    </label>
+  </form>
+</div>
+
+  </form>
+</div>
+    <button type="submit" class="btn btn-default">Register</button>
+</div>
+
+<div id="Others" class="container-fluid">
+<u><h2>Registration Form</h2></u>
+    <div class="form-group">
+      <label for="name">Username:</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter name" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+    </div>
+    <div class="form-group">
+      <label for="dob">DOB:</label>
+      <input type="date" class="form-control" id="dob" placeholder="Enter date of birth" name="dob">
+    </div>
+    <div class="form-group">
+      <label for="mobile no">Mobile No:</label>
+      <input type="text" class="form-control" id="mobileno" placeholder="Enter mobile number" name="mobile no">
+    </div>
+   <div class="form-group">
+      <label for="address">Address:</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter address" name="address">
+    </div>
+   <div class="container">
+  <p>Known Languages:</p>
+  <form>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">English
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Telugu
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Hindi
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Kannada
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Tamil
+    </label>
+  </form>
+</div>
+
+  </form>
+</div>
+    <button type="submit" class="btn btn-default">Register</button>
+</div>
+
+
+<div id="About" class="container-fluid">
+<h2><u>About Founders</u></h2>
+<div class="container-fluid">
+<p><h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5></p>
+<div class="row">
+    <div class="col-md-3"><img src="a1.jpg" width="100%">
+    <p><h2><font color="black">John Doe</h2></p>
+    <p><h3><font color="grey">CEO & Founder</font></h3></p>
+    <p><h5>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</h5></p>
+    <button type="button" class="btn btn-default">Contact</button>
+    </div>
+    <div class="col-md-3"><img src="a2.jpg" width="100%">
+    <p><h2><font color="black">Jane Doe</h2></p>
+    <p><h3><font color="grey">Architect</font></h3></p>
+    <p><h5>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</h5></p>
+    <button type="button" class="btn btn-default">Contact</button>
+    </div>
+    <div class="col-sm-3"><img src="a3.jpg" width="100%"> 
+    <p><h2><font color="black">Mike Ross</h2></p>
+    <p><h3><font color="grey">Manager</font></h3></p>
+    <p><h5>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</h5></p>
+    <button type="button" class="btn btn-default">Contact</button>
+    </div>
+    <div class="col-sm-3"><img src="a4.jpg" width="100%">
+    <p><h2><font color="black">Dan Star</h2></p>
+    <p><h3><font color="grey">Engineer</font></h3></p>
+    <p><h5>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</h5></p>
+    <button type="button" class="btn btn-default">Contact</button> 
+    </div>
+  </div>
+</div>
+<br>
+
+<div id="Contact" class="container-fluid">
+<h2><u>Contact</u></h2>
+<div class="row">
+<div class="col-md-4">
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><h4>Call to<span class="caret"></h4></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#"><h5>Landline No:1800-234-567</h5></a></li>
+          <li><a href="#"><h5>Mobile No 1:9988776655</h5></a></li>
+          <li><a href="#"><h5>Mobile No 2:9491627437</h5></a></li>
+          </ul>
+          </li>
+</div>
+
+<div class="col-md-4"><p><h4>Follow Us On</p></h4>
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+</div>
+<div class="col-md-4">
+<h4>Star Rating</h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+</div>
+</div>
+</div>
+<div class="callout">
+  <div class="callout-header">Alert!</div>
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+  <div class="callout-container">
+    <p>You have not registered yet. If u registered just ignore the message. If u want to register now <a href="Students"> Register here</a> </p>
+  </div>
+</div>
+    </div>
+</div>
+</div>
+<br>
+<br>
+
+<footer class="container-fluid">
+  <center><p>@Copyrights Reserved</p></center>
+</footer>
+</body>
+</html>
